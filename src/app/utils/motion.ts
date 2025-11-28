@@ -34,7 +34,7 @@ export const fadeIn = (direction: "left" | "right" | "up" | "down" | "",
         type: type,
         delay: delay,
         duration: duration,
-        ease: "easeInOut" as Easing,
+       ease: "easeInOut" as unknown,
       },
     },
   };
