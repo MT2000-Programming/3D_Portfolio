@@ -1,4 +1,4 @@
-import { Variants, Transition } from "framer-motion";
+import { Variants, Transition, Easing } from "framer-motion";
 export const textVariant = (delay: number = 0): Variants => {
   return {
     hidden: {
@@ -34,7 +34,7 @@ export const fadeIn = (direction: "left" | "right" | "up" | "down" | "",
         type: type,
         delay: delay,
         duration: duration,
-        ease: "easeInOut" as any,
+        ease: "easeInOut" as Easing,
       },
     },
   };
